@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;    
+}
+
+header{
+    height: 100vh;
+    background: url(https://placehold.jp/60/666666/ffffff/1440x1024.png?text=FirstViewFullSize) center / cover 
+    no-repeat;
+     /* v2.追加コード */
+    background-attachment: fixed;
+}
+
+#gnav{
+    width: 100%;
+    background: #000;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    overflow-x: hidden;
+}
+
+#gnav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+#gnav .page{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gnav a{
+    display: block;
+}
+#gnav a:hover{
+    opacity: .8;
+}
+
+#gnav .logo img{
+    display: block;
+}
+
+#gnav .page a{
+    height: 100%;
+    line-height: 100px;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0 2em;
+}
+
+main{
+    min-height: 100vh;
+     /* v2.追加コード */
+    background: #aaa;
+    padding: 80px 0;
+}
+
+footer{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+#copyright{
+    color: #fff;
+    font-size: 12px;
+}
+
+/* v2.追加コード */
+article {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px;
+    background: #fff;
+  }
+  
+  h2 {
+    margin-bottom: 1em;
+  }
+  
+  article p {
+    margin-bottom: 1em;
+  }
+  /****************/
+  

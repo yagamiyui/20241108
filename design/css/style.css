@@ -1,0 +1,205 @@
+@charset "utf-8";
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;    
+}
+
+header{
+    height: 100vh;
+    background-image: url(../img/tomas-jasovsky-d5SZqLkpIrY-unsplash.jpg);
+    background-size: cover;
+     /* v2.追加コード */
+    background-attachment: fixed;
+}
+
+.lo{
+    position: absolute;
+    right: 0px;
+    top: 10px;
+}
+
+#gnav{
+    width: 100%;
+    background: #000;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: hidden;
+}
+
+#gnav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+#gnav .page{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: solid #fff;
+}
+
+#gnav a{
+    display: block;
+}
+#gnav a:hover{
+    opacity: .8;
+    background-color: #202020;
+}
+
+#gnav .logo img{
+    display: block;
+}
+
+#gnav .page a{
+    height: 100%;
+    line-height: 100px;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0 2em;
+}
+
+main{
+    min-height: 100vh;
+     /* v2.追加コード */
+    background: #aaa;
+    padding: 80px 0;
+}
+
+footer{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+#copyright{
+    color: #fff;
+    font-size: 12px;
+}
+
+/* v2.追加コード */
+article {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px;
+    background: #fff;
+    margin-bottom: 50px;
+  }
+  
+  h2 {
+    margin-bottom: 1em;
+  }
+  
+  article p {
+    margin-bottom: 1em;
+  }
+  /****************/
+  
+  .info{
+    margin-top: 50px;
+  }
+  .news-list{
+    list-style: none outside;
+    margin: 0;
+    padding: 0;
+  }
+  .news-list .item a{
+    display: flex;
+    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    text-decoration: none;
+    color: #ffffff;
+    border-bottom: 1px solid #CCC;
+    padding: 20px 20px;
+  }
+  .news-list .item:first-child a{
+    border-top: 1px solid #CCC;
+  }
+  .news-list .item .date{
+    margin: 0;
+    min-width: 140px;
+    font-size: 16px;
+    color: #000;
+    padding: 0 20px 0 0;
+  }
+  .news-list .item .category{
+    margin: 0;
+    min-width: 140px;
+    padding: 0 20px 0 0;
+  }
+  .news-list .item .category span{
+    background: #252e38;
+    color: #FFF;
+    text-align: center;
+    display: inline-block;
+    padding: 5px 20px;
+    font-size: 12px;
+    line-height: 1;
+  }
+  .news-list .item .title{
+    margin: 0;
+    width: 100%;
+  }
+  .news-list .item a:hover .title{
+    color: #00F;
+  }
+  
+  dl.menu{
+    width:100%;
+    font-size: 1rem;
+    }
+  dl.menu div{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+    padding: 5px 0;
+    }
+  dl.menu div::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    width: 100%;
+    border-bottom: dotted 1px #000;
+    }
+  dl.menu dt{
+    margin:0;
+    padding: 0 5px 0 0;
+    background-color: #ffffff;
+    z-index: 2;
+    text-align: left;
+    }
+  dl.menu dd{
+    margin:0;
+    padding: 0 0 0 5px;
+    background-color: #ffffff;
+    z-index: 2;
+    text-align: right;
+    }
+  
+  
+  /* background */
+  body{
+   background-color:#e5e5e5;
+  }
+  section.test_area{
+    max-width:1000px;
+    margin:0 auto;
+    padding:20px;
+    background-color:#ffffff;
+  }
+  
